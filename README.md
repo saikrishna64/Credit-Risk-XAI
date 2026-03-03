@@ -290,3 +290,14 @@ Auto-generated every time you run `python credit_risk_model.py`.
 | Frontend | React (Create React App) |
 | Styling | Inline CSS — luxury gold/dark fintech theme |
 | Currency | Indian Rupee (₹) with lakh/crore formatting |
+
+## 🌐 Live Demo
+
+Experience the application live — no setup required, accessible from any device.
+
+| | Link |
+|--|------|
+| 🚀 Live App | https://ai-powered-loan-decision-engine-wit.vercel.app |
+| 💻 GitHub | [saikrishna64/AI-Powered_Loan_Decision_Engine_with_XAI](https://github.com/saikrishna64/AI-Powered_Loan_Decision_Engine_with_XAI) |
+
+> Enter any applicant's financial details and instantly see the loan decision along with full XAI reasoning — powered by SHAP, LIME, and Rule-based explanations. No installation needed.
