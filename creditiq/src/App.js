@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 
-const API_URL = "http://localhost:8000";
+const API_URL = "https://credit-risk-api.onrender.com";
 
 const INR = (val) => {
   if (val >= 10000000) return `₹${(val / 10000000).toFixed(2)} Cr`;
