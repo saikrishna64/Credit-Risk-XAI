@@ -1,0 +1,27 @@
+# Create root .gitignore
+@"
+# Python virtual environment
+.venv1/
+venv/
+env/
+
+# Python cache
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# React (inside creditiq folder)
+creditiq/node_modules/
+creditiq/build/
+
+# Logs
+*.log
+
+# Environment variables
+.env
+
+# OS files
+.DS_Store
+Thumbs.db
+"@ | Out-File -FilePath .gitignore -Encoding utf8
