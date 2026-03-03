@@ -297,7 +297,7 @@ Experience the application live — no setup required, accessible from any devic
 
 | | Link |
 |--|------|
-| 🚀 Live App | (https://ai-powered-loan-decision-engine-wit.vercel.app) |
+| 🚀 Live App | https://ai-powered-loan-decision-engine-wit.vercel.app |
 | 💻 GitHub | [saikrishna64/AI-Powered_Loan_Decision_Engine_with_XAI](https://github.com/saikrishna64/AI-Powered_Loan_Decision_Engine_with_XAI) |
 
 > Enter any applicant's financial details and instantly see the loan decision along with full XAI reasoning — powered by SHAP, LIME, and Rule-based explanations. No installation needed.
