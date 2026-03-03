@@ -26,14 +26,23 @@ Open **two terminals** side by side:
 
 **Terminal 1 — Backend**
 ```powershell
-cd C:\...\Credit_Risk_Model
-.venv1\Scripts\activate
+cd C:\...\Credit-Risk-XAI
+
+# Activate virtual environment
+.venv\Scripts\activate
+
+# Start API server
 uvicorn api:app --reload --port 8000
 ```
 
 **Terminal 2 — Frontend**
 ```powershell
-cd C:\...\Credit_Risk_Model\creditiq
+cd C:\...\Credit-Risk-XAI\creditiq
+
+# Install node modules (only needed after cloning)
+npm install
+
+# Start React app
 npm start
 ```
 
@@ -45,23 +54,57 @@ Then open your browser:
 
 ## First-Time Setup
 
+### Step 1 — Clone the repository
 ```powershell
-# 1. Install Python dependencies
+git clone https://github.com/saikrishna64/Credit-Risk-XAI.git
+cd Credit-Risk-XAI
+```
+
+### Step 2 — Create and activate Python virtual environment
+```powershell
+# Create virtual environment
+python -m venv .venv
+
+# Activate it (Windows)
+.venv\Scripts\activate
+
+# You should see (.venv) at the start of your terminal prompt
+```
+
+### Step 3 — Install Python dependencies
+```powershell
 pip install -r requirements.txt
+```
 
-# 2. Test the model standalone (generates CSV + prints sample predictions)
+### Step 4 — Test the model (optional)
+```powershell
+# Generates credit_risk_dataset.csv and prints sample predictions
 python credit_risk_model.py
+```
 
-# 3. Create React app (only once)
-npx create-react-app creditiq
-
-# 4. Copy frontend into React app
-cp CreditIQ_Frontend.jsx creditiq\src\App.js
-
-# 5. Start frontend
+### Step 5 — Install frontend dependencies
+```powershell
 cd creditiq
+npm install
+cd ..
+```
+
+### Step 6 — Run the project (two terminals)
+
+**Terminal 1 — Backend**
+```powershell
+cd Credit-Risk-XAI
+.venv\Scripts\activate
+uvicorn api:app --reload --port 8000
+```
+
+**Terminal 2 — Frontend**
+```powershell
+cd Credit-Risk-XAI\creditiq
 npm start
 ```
+
+> **Note:** Every time you open a new terminal for the backend, you must activate the virtual environment first with `.venv\Scripts\activate`. You will see `(.venv)` at the start of the prompt when it is active.
 
 ---
 
